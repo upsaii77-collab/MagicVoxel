@@ -422,6 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voxelFactory: {fileID: 8252354422713138293, guid: 9231d32d40822124897975b957ac3bc2,
     type: 3}
+  voxelPoolSize: 20
 --- !u!4 &579956927
 Transform:
   m_ObjectHideFlags: 0
