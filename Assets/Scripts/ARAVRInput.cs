@@ -1,5 +1,5 @@
 //#define PC      //PC 버전으로 할지, 오큘러스 버전으로 할지 주석처리로 선택하면 됨
-#define Oculus
+#define Oculus   //하나만 골라줘야 함
 
 using System.Collections;
 using System.Collections.Generic;
