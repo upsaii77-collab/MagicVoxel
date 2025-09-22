@@ -26,9 +26,10 @@ public class VoxelMaker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1")) //버튼이 눌렸을 때(사용자가 마우스를 클릭했다면) 아니 Fire1이 숫자 1이었네...
+        if(ARAVRInput.Get(ARAVRInput.Button.One)) //VR 컨트롤러의 발사 버튼을 누르면
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); //ray 변수 저장
+            //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); //ray 변수 저장, 사전의 마우스로 했던 부분은 주석처리
+            Ray ray = new Ray(ARAVRInput.RHandPosition, ARAVRInput.RHandDirection); //컨트롤러가 향하는 방향으로 시선 만들기
             RaycastHit hitInfo = new RaycastHit(); //Hit라는 결과물에 대한 정보를 받음
 
             //마우스의 위치가 바닥 위에 위치한다면
